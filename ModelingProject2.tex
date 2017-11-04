@@ -17,8 +17,6 @@
 \maketitle
 
 
-\vspace*{0.15in}
-
 
 Skillistan is a simple economy with only one type of firm that requires two types of workers:
 those who can do math (M-types) and those who can write poems about math in addition
@@ -30,55 +28,105 @@ they obtain and none from leisure: pondering the nature of reality is no more pl
 than doing math or writing poetry.
 
 \begin{enumerate} 
-\item{Write down a model for the firm}
+
+	\item{Write down a model for the firm}
+	
 \begin{enumerate}
-\item{How many M-types and P-types will the firm hire?}
-\item{What will be the wage offered to the M-types and the P-types?}
+
+	\item{How many M-types and P-types will the firm hire?}
+	\item{What will be the wage offered to the M-types and the P-types?}
+	
 \end{enumerate}
 
-PART 1 HERE
+	We begin with some basic assumptions and notes on notation:
+	
+\begin{itemize}
 
+	\item{The firm is profit maximizing, and produces only one good (alternatively, the firm could produce a vector of goods, with a corresponding vector of prices, but we assume one good here to simplify the model)}
+	\item{The firm experiences decreasing marginal gains to capital and labor, so as to satisfy sufficient second order conditions for profit maximization}
+	\item{The firm cannot set wages or prices}
+	\item{The price of capital is fixed at $r$, and the wages of M-types and P-types are $w_m$ and $w_p$ respectively, and the market price of the good produced is $q$}
+	\item{We denote the amount of M-types and P-types hired by the firm by $L_m$ and $L_p$ respectively, and the amount of capital as $K$}
+\end{itemize}
 
-\item{All residents graduate from Skillistan High where they learn how to do math without
+Given these assumptions, note that the firm has a production function $f(K,L_m,L_p)$.  Given this and the other exogeneous variables, we have that the firm will obtain profit of $q f(K,L_m,L_p) - w_m L_m - w_p L_p - rK$.  We assumed that the production function satisfies relevant second order conditions, so we have that the following first order conditions are sufficient to characterize a maximum:
+\begin{align*}
+q f_K(K, L_m, L_p) &= r \\
+q f_{L_m}(K, L_m, L_p) &= w_m \\
+q f_{L_p}(K, L_m, L_p) &= w_p \\
+\end{align*}
+
+Dividing the above equations by each other gives that the following must hold (with arguments suppressed):
+\begin{align*}
+f_{L_m} w_p &= f_{L_p} w_m \\
+f_{L_m} r &= f_K w_m \\
+f_{L_p} r &= f_k w_p \\
+\end{align*}
+
+Now, we know that P-types are more productive that M-types, which implies that $f_{L_p} > f_{L_m}$, for equal values of $L_p$ and $L_m$.  From the above equations, we have the ratio $\dfrac{f_{L_m}}{f_{L_p}} = \dfrac{w_m}{w_p}$.  Thus, we see that if the wages are equal, then we have $f_{L_p}(K,L_m,L_p) = f_{L_m}(K,L_m,L_p)$.  This means that if the wages are equal, the firm will hire more P-types, and fewer M-types.  Similarly, if the wages for P-types are lower than M-types, then the firm will definitely hire more P-types.  If the wage of M-types is lower than the wage of P-types, then it is not certain whether the firm will hire more M-types or P-types.  However, they will still hire where $\dfrac{f_{L_m}}{f_{L_p}} = \dfrac{w_m}{w_p}$.  We see that the wage of the P-types versus M-types depends on the difference in productivity - the more productive the P-type relative to the M-type, the higher the difference in wages.  This is not necessarily obvious now, since we assume the firm takes wages and prices as exogeneous, but it will be discussed in more detail later, in discussion of market equilibrium.  
+
+Now, to better understand the relationships between wages and labor, we consider some comparative statics.  For brevity, and because the equations are symmetric, we take comparative statics of $L_p$ and $L_m$ with respect to $w_m$ (the results with respect to $w_p$ are analogous):
+$$
+  \qpartial{L_p}{w_m} = \frac{f_{K L_m} f_{L_p L_p} - f_{K L_p} f_{L_m L_p}}{q \left(f_{K K}
+   \left(f_{L_m L_p}^2-f_{L_m L_m} f_{L_p L_p} \right) + f_{K L_m} ^2 f_{L_p L_p}-2
+   f_{K L_m} f_{K L_p} f_{L_m L_p} + f_{K L_p}^2 f_{L_m L_m}\right)}
+$$
+$$
+	\qpartial{L_m}{w_m} = \frac{f_{K L_p}^2-f_{KK} f_{L_p L_p}}{q \left(f_{KK}
+   \left(f_{L_m L_p}^2-f_{L_m L_m} f_{L_p L_p}\right)+f_{K L_m}^2 f_{L_p L_p}-2
+   f_{K L_m} f_{K L_p} f_{L_m L_p}+f_{K L_p}^2 f_{L_m L_m}\right)}
+$$
+The denominator is the same in both expressions above, and is always positive.  Thus, we see that since $f_{K L_p}^2-f_{KK} f_{L_p L_p} < 0$, we have that $\qpartial{L_m}{w_m}$ is always negative, meaning an increase in the wages of M-types will always cause a decrease in the wages of M-types.  The other equation has an ambiguous sign.  However, since we know that P-types can also do math, the job of M-types, we can assume that these jobs are substitutes, and thus we have that $f_{K L_m} f_{L_p L_p} - f_{K L_p} f_{L_m L_p} > 0$, so that $\qpartial{L_p}{w_m}$.  Thus, an increase in the wage of the M-types will cause an increase in the number of P-types hired, and by symmetry, vice-versa. 
+
+	\item{All residents graduate from Skillistan High where they learn how to do math without
 paying any fees. When they graduate from high school, all residents of Skillistan are
 identical M-types. Afterwards, they can choose to attend Skillvard College where
 they can learn how to write poems about math and become P-types but they have
 to pay tuition fees.}
+
 \begin{enumerate}
-\item{Derive a condition in terms of the wages in equilibrium for M-types and P-types
+
+	\item{Derive a condition in terms of the wages in equilibrium for M-types and P-types
 and in terms of the cost of Skillvard high for when M-types will choose to become
 P-types.}
+
 \end{enumerate}
 
 PART 2 HERE
 
-\item{Making any simplifying assumptions you may need to make:}
+	\item{Making any simplifying assumptions you may need to make:}
+	
 \begin{enumerate}
-\item{Derive the labor demand curve}
-\item{Derive the labor supply curve}
-\item{Define the `poetry premium’ as the ratio of a P-type’s wage and an M-type’s
+
+	\item{Derive the labor demand curve}
+	\item{Derive the labor supply curve}
+	\item{Define the `poetry premium’ as the ratio of a P-type’s wage and an M-type’s
 wage. Plot the labor demand and supply curves as a function of the number of
 P-types in society and the poetry premium (in one graph).}
-\item{Skillvard College announces an increase in tuition fees. What does this mean
+	\item{Skillvard College announces an increase in tuition fees. What does this mean
 for the supply of P-types and the wages they earn in equilibrium?}
+
 \end{enumerate}
 
 PART 3 HERE
 
-\item{The Government of Skillistan wants society to have more P-types than it currently
+	\item{The Government of Skillistan wants society to have more P-types than it currently
 does and decides to subsidize the tuition fee at Skillvard College.}
+
 \begin{enumerate}
-\item{Does this subsidy increase the number of P-types in society?}
-\item{What are the aggregate consequences of this subsidy for residents and firms? In
+
+	\item{Does this subsidy increase the number of P-types in society?}
+	\item{What are the aggregate consequences of this subsidy for residents and firms? In
 other words, who benefits from the subsidy?}
-\item{The Government is also a player in this economy. It cares most about the welfare
+	\item{The Government is also a player in this economy. It cares most about the welfare
 of residents, somewhat less about its own welfare and the least about the
 welfare of firms. Is the fee subsidy a Pareto improvement over the status quo?
 If not, suggest an alternative policy that would be a Pareto improvement.}
+
 \end{enumerate}
 
 PART 4 HERE
 
-\end{enumerate}
 
+\end{enumerate}
 \end{document}
