@@ -47,6 +47,7 @@ than doing math or writing poetry.
 	\item{The firm cannot set wages or prices}
 	\item{The price of capital is fixed at $r$, and the wages of M-types and P-types are $w_m$ and $w_p$ respectively, and the market price of the good produced is $q$}
 	\item{We denote the amount of M-types and P-types hired by the firm by $L_m$ and $L_p$ respectively, and the amount of capital as $K$}
+	\item{The firm must hire both types of workers to have any production.  This assumption comes from the part of the problem statement that says "the firm \textit{requires} two types of workers"}
 \end{itemize}
 
 Given these assumptions, note that the firm has a production function $f(K,L_m,L_p)$.  Given this and the other exogeneous variables, we have that the firm will obtain profit of $q f(K,L_m,L_p) - w_m L_m - w_p L_p - rK$.  We assumed that the production function satisfies relevant second order conditions, so we have that the following first order conditions are sufficient to characterize a maximum:
@@ -77,6 +78,8 @@ $$
    f_{K L_m} f_{K L_p} f_{L_m L_p}+f_{K L_p}^2 f_{L_m L_m}\right)}
 $$
 The denominator is the same in both expressions above, and is always positive.  Thus, we see that since $f_{K L_p}^2-f_{KK} f_{L_p L_p} < 0$, we have that $\qpartial{L_m}{w_m}$ is always negative, meaning an increase in the wages of M-types will always cause a decrease in the wages of M-types.  The other equation has an ambiguous sign.  However, since we know that P-types can also do math, the job of M-types, we can assume that these jobs are substitutes, and thus we have that $f_{K L_m} f_{L_p L_p} - f_{K L_p} f_{L_m L_p} > 0$, so that $\qpartial{L_p}{w_m}$.  Thus, an increase in the wage of the M-types will cause an increase in the number of P-types hired, and by symmetry, vice-versa. 
+
+Now, if we assume that any worker Skillistan can choose freely whether to be a P-type or M-type (which will not always be true, as we see in the next part), then have that the wages of P-types and M-types must be equal, since otherwise the utility to being one would be greater than that of the other, so that there would only be one type of worker.  When there is only one type of worker, the firm is not profit maximizing, so it must increase the wages of the other type until the two are equal.  Thus, we see that $f_{L_p} = f_{L_m}$.  This implies that the firm will hire more P-types than M-types.  
 
 	\item{All residents graduate from Skillistan High where they learn how to do math without
 paying any fees. When they graduate from high school, all residents of Skillistan are

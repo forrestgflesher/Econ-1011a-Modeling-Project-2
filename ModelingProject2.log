@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2016.5.22)  4 NOV 2017 18:22
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2016.5.22)  6 NOV 2017 00:20
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -238,12 +238,12 @@ LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <12> not available
  [1
 
 {/usr/local/texlive/2016/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
-Overfull \hbox (5.39468pt too wide) detected at line 73
+Overfull \hbox (5.39468pt too wide) detected at line 74
 [] \OT1/cmr/m/n/12 = []
  []
 
 
-Overfull \hbox (5.39468pt too wide) detected at line 78
+Overfull \hbox (5.39468pt too wide) detected at line 79
 [] \OT1/cmr/m/n/12 = []
  []
 
@@ -259,13 +259,13 @@ Missing character: There is no € in font cmr12!
 Missing character: There is no ™ in font cmr12!
  [3] [4] (./ModelingProject2.aux) ) 
 Here is how much of TeX's memory you used:
- 2677 strings out of 493014
- 34919 string characters out of 6133351
- 110693 words of memory out of 5000000
- 6189 multiletter control sequences out of 15000+600000
- 12809 words of font info for 56 fonts, out of 8000000 for 9000
+ 2679 strings out of 493014
+ 34940 string characters out of 6133351
+ 111693 words of memory out of 5000000
+ 6190 multiletter control sequences out of 15000+600000
+ 13156 words of font info for 57 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 27i,8n,24p,1150b,211s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 27i,8n,24p,1150b,248s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/local/texlive/2016/texmf-dist/fonts/ty
 pe1/public/amsfonts/cm/cmex10.pfb></usr/local/texlive/2016/texmf-dist/fonts/typ
 e1/public/amsfonts/cm/cmmi12.pfb></usr/local/texlive/2016/texmf-dist/fonts/type
@@ -274,11 +274,12 @@ public/amsfonts/cm/cmmi8.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/pu
 blic/amsfonts/cm/cmr12.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/publ
 ic/amsfonts/cm/cmr17.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/public
 /amsfonts/cm/cmr8.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/public/am
-sfonts/cm/cmsy10.pfb>
-Output written on ModelingProject2.pdf (4 pages, 86778 bytes).
+sfonts/cm/cmsy10.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/public/ams
+fonts/cm/cmti12.pfb>
+Output written on ModelingProject2.pdf (4 pages, 96030 bytes).
 PDF statistics:
- 49 PDF objects out of 1000 (max. 8388607)
- 34 compressed objects within 1 object stream
+ 53 PDF objects out of 1000 (max. 8388607)
+ 37 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
  1 words of extra memory for PDF output out of 10000 (max. 10000000)
 
